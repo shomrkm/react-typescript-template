@@ -1,2 +1,3 @@
-# react-typescript-template
-My template project for react, typescript, jest with webpack.
+# Description
+
+React-Testing-Library の勉強用のプロジェクトです。

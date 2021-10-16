@@ -1,0 +1,6 @@
+dist/
+**/node_modules/
+**/*.main.js
+*.config.js
+webpack.*.js
+.eslintrc.js

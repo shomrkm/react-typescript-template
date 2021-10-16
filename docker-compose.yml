@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  my-app:
+    container_name: my-app
+    build:
+      context: .
+    tty: true
+    working_dir: /app/
+    ports:
+      - 3000:80
+    volumes:
+      - .:/app:cached
+      - node_modules:/app/node_modules
+      #- dist:/usr/src/neiw-app/dist
+
+volumes:
+  node_modules: {}
