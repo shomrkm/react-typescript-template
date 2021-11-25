@@ -3,10 +3,12 @@
     "dockerComposeFile": ["../docker-compose.yml"],
     "appPort": [3000],
     "settings": {
-        "editor.formatOnSave": true
+      "editor.codeActionsOnSave": {
+      "source.fixAll": true
+      },
     },
     "service": "my-app",
-    "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint", "orta.vscode-jest"],
+    "extensions": ["dbaeumer.vscode-eslint", "jpoissonnier.vscode-styled-components"],
     "postCreateCommand": "yarn install",
     "workspaceFolder": "/app",
     "shutdownAction": "stopCompose"
